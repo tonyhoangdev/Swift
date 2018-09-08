@@ -1,3 +1,9 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
 //1. Constants and Variables
 let constant22 = 20
 var number22 = 20
@@ -18,7 +24,7 @@ var name = "Tony"
 var message = greeting + name
 message.uppercased()
 message.lowercased()
-message.characters.count
+message.count
 var bookPrice = 40
 var nCopies = 6
 var totalPrice = bookPrice * nCopies
@@ -28,7 +34,7 @@ var totalPriceMessage = "The price of the book is $ \(totalPrice)"
 var timeWakeup = 6
 if timeWakeup == 6 {
     print("Cook yourself a big breakfast!")
-} else { 
+} else {
     print("Go out for breakfast")
 }
 
@@ -47,7 +53,7 @@ if bonus >= 10000 {
 } else if bonus >= 1000 && bonus < 5000 {
     print("I will travel to Bangkok")
 } else {
-   print("Just stay home")
+    print("Just stay home")
 }
 
 switch bonus {
@@ -88,15 +94,14 @@ for book in bookCollection {
 }
 
 var bookCollectionDict = ["1231233543": "Tool of Tony",
-                          "0234012345": "London", 
-                          "9813198234": "Lien Quan", 
-                          "1263214923": 
-                          "AOE"]
+                          "0234012345": "London",
+                          "9813198234": "Lien Quan",
+                          "1263214923": "AOE"]
 
 print("===== bookCollectionDict")
 for (key, value) in bookCollectionDict {
     print("ISBN: \(key)")
-	print("Title: \(value)")
+    print("Title: \(value)")
 }
 
 //////////////
@@ -129,7 +134,7 @@ if let meaning = meaning {
 print("===== emojiDict")
 for (key, value) in emojiDict {
     print("ISBN: \(key)")
-	print("Title: \(value)")
+    print("Title: \(value)")
 }
 
 // 6. Optional variable
@@ -137,12 +142,12 @@ print("===== Optionals")
 var jobTitle: String?
 jobTitle = "iOS Dev"
 if jobTitle != nil {
-    var messageOpt = "Your job title is " + jobTitle!
+    let messageOpt = "Your job title is " + jobTitle!
     print(messageOpt)
 }
 
 // 7. Optional Binding
 if let jobTitle = jobTitle {
-    var messageOpt = "Your job title is " + jobTitle
+    let messageOpt = "Your job title is " + jobTitle
     print(messageOpt)
 }
